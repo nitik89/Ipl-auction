@@ -22,27 +22,32 @@ let teams = [];
 io.on("connection", (socket) => {
   console.log("connected to socket.io");
 
-  socket.on("joinRoom", ({ roomId, teamName }) => {
+  socket.on("joinRoom", ({ name, logo, purse, roomId }) => {
+    console.log(name, roomId);
     socket.join(roomId);
-    socket.teamName = teamName;
-    teams.push(teamName);
+    socket.teamName = name;
+    teams.push({ name, logo, purse });
     io.to(roomId).emit("joined-room", {
       teams,
-      message: `${teamName} has joined the room`,
+      message: `${name} has joined the room`,
     });
   });
 
   socket.on("bid-player", ({ price, team, bids }) => {
+    console.log(price, team, bids);
     io.emit("team-bid", { price, team, bids });
   });
-  socket.on("withraw-bid", ({ team, bids }) => {
-    console.log("withdrawn by iteseld");
-    io.emit("withdrawn-bid", { bids, team });
+  socket.on("unsold-player", ({ currPlayer, currIdx }) => {
+    io.emit("player-unsold", { currPlayer, currIdx });
+  });
+  socket.on("withraw-bid", ({ team, bids, currPlayer, currIdx }) => {
+    console.log("withdrawn by iteseld", currPlayer);
+    io.emit("withdrawn-bid", { bids, team, currPlayer, currIdx });
   });
   socket.on("disconnect", () => {
     console.log("User disconnected", socket.teamName);
     if (socket.teamName) {
-      teams = teams.filter((team) => team !== socket.teamName);
+      teams = teams.filter((team) => team.name !== socket.teamName);
       io.emit("team-left", {
         teams,
         message: `${socket.teamName} has left the room`,
