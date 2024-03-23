@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Mumbai Indians",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+  },
+  {
+    "name": "Chennai Super Kings",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/800px-Chennai_Super_Kings_Logo.svg.png"
+  },
+  {
+    "name": "Royal Challengers Bangalore",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Royal_Challengers_Bangalore_2020.svg/640px-Royal_Challengers_Bangalore_2020.svg.png"
+  },
+  {
+    "name": "Kolkata Knight Riders",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/1200px-Kolkata_Knight_Riders_Logo.svg.png"
+  },
+  {
+    "name": "Sunrisers Hyderabad",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Sunrisers_Hyderabad.png"
+  },
+  {
+    "name": "Rajasthan Royals",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/hi/thumb/6/60/Rajasthan_Royals_Logo.svg/640px-Rajasthan_Royals_Logo.svg.png"
+  },
+  {
+    "name": "Delhi Capitals",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+  },
+  {
+    "name": "Punjab Kings",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+  },
+  {
+    "name": "Gujarat Titans",
+    "purse": 1000000000,
+    "logo": "https://logowik.com/content/uploads/images/gujarat-titans6813.jpg"
+  },
+  {
+    "name": "Lucknow Super Giants",
+    "purse": 1000000000,
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/1200px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+  }
+]
